@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lesson4Java2</string>
+    <string name="Enter_name">Введите имя</string>
+    <string name="Введите_имя">Введите имя</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="Кнопка">Вход</string>
+    <string name="Mee">Remember Me</string>
+    <string name="Пароль">Пароль</string>
+</resources>
