@@ -6,4 +6,7 @@
     <string name="Кнопка">Вход</string>
     <string name="Mee">Remember Me</string>
     <string name="Пароль">Пароль</string>
+    <string name="btn_entrance">Вход</string>
+    <string name="check_box_remember_me">Remember Me</string>
+    <string name="et_enter_a_name">Введите имя</string>
 </resources>

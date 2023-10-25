@@ -4,103 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="236dp"
         android:layout_height="239dp"
+        android:layout_marginTop="60dp"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/image_size"
+            android:id="@+id/image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:src="@drawable/img" />
 
-
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id="@+id/text"
-        android:layout_width="209dp"
-        android:layout_height="63dp"
-        android:layout_gravity="center_vertical"
-        android:text="@string/Введите_имя"
-
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:hint="@string/et_enter_a_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/textsi"
-        android:layout_width="202dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center_vertical"
-        android:text="@string/Пароль"
-
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.563" />
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/Пароль"
+        app:layout_constraintTop_toBottomOf="@id/editText1" />
 
     <CheckBox
-        android:id="@+id/textri"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Mee"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
+        android:id="@+id/checkbox"
+        android:layout_width="212dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/check_box_remember_me"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintTop_toBottomOf="@id/editText2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button"
-        android:layout_width="274dp"
-        android:layout_height="63dp"
-        android:backgroundTint="@color/red"
-        android:text="@string/Кнопка"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-14dp" />
-
-
-
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF5722"
+        android:text="@string/btn_entrance"
+        app:cornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/checkbox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
